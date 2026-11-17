@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Max Fu | Gameplay &amp; AI Programmer</title>
-  <meta name="description" content="Portfolio of Max Fu: Unity and C# gameplay programming, fluid simulation, shaders, and AI systems.">
+  <title>Max Fu | Projects</title>
+  <meta name="description" content="Projects by Max Fu: games, simulations, shaders, and AI experiments.">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,8 +12,7 @@
   <header class="top">
     <a class="brand" href="#top">Max Fu</a>
     <nav>
-      <a href="#work">Work</a>
-      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
@@ -21,192 +20,143 @@
   <main id="top">
 
     <section class="hero">
-      <p class="eyebrow">Gameplay &middot; Simulation &middot; AI &middot; Shaders</p>
-      <h1>I build game systems, simulations, and the code that makes them feel alive.</h1>
+      <h1>Things I&rsquo;ve made.</h1>
       <p class="lede">
-        Software engineer with a B.S. in Computer Science and graduate coursework in AI, machine learning,
-        algorithms, and graphics. I work mainly in C# and Unity.
+        Games, simulations, shaders, and AI experiments, mostly in Unity and C#.
       </p>
-      <div class="cta">
-        <a class="btn primary" href="#work">See my work</a>
-        <a class="btn" href="assets/Max_Fu_Resume.pdf">Resume (PDF)</a>
-      </div>
     </section>
 
-    <section id="work">
-      <h2>Selected work</h2>
+    <section id="projects">
+      <div class="grid">
 
-      <!-- ===================== PROJECT 1 ===================== -->
-      <article class="project">
-        <div class="media">
-          <!--
-            REPLACE the placeholder below with ONE of these:
+        <!-- ===================== PROJECT ===================== -->
+        <article class="card">
+          <div class="media">
+            <!--
+              REPLACE the placeholder below with ONE of these:
 
-            Local video:
-            <video src="assets/fluid-sim.mp4" poster="assets/fluid-sim.jpg" controls muted loop playsinline></video>
+              Local video:
+              <video src="assets/fluid-sim.mp4" poster="assets/fluid-sim.jpg" controls muted loop playsinline></video>
 
-            YouTube embed:
-            <iframe src="https://www.youtube.com/embed/VIDEO_ID" title="Fluid simulation demo" allowfullscreen loading="lazy"></iframe>
+              YouTube embed:
+              <iframe src="https://www.youtube.com/embed/VIDEO_ID" title="Fluid simulation demo" allowfullscreen loading="lazy"></iframe>
 
-            Image / GIF:
-            <img src="assets/fluid-sim.gif" alt="Fluid simulation running in Unity">
-          -->
-          <div class="placeholder">Add video or GIF</div>
-        </div>
-        <div class="body">
-          <p class="tag">Unity &middot; C#</p>
-          <h3>Fluid Simulation</h3>
-          <p>
-            A real-time fluid simulation built in Unity. [Add 1&ndash;2 sentences: the technique you used,
-            such as particle-based or grid-based, and what makes it interesting.]
-          </p>
-          <ul>
-            <li>[What you personally built]</li>
-            <li>[A performance or technical detail, e.g. particle count, frame rate, optimizations]</li>
-          </ul>
-          <p class="links">
-            <a href="https://github.com/YOUR-USERNAME/fluid-simulation">Source on GitHub</a>
-          </p>
-        </div>
-      </article>
+              Image / GIF:
+              <img src="assets/fluid-sim.gif" alt="Fluid simulation running in Unity">
+            -->
+            <div class="placeholder">Add video or GIF</div>
+          </div>
+          <div class="body">
+            <p class="tag">Unity &middot; C# &middot; Simulation</p>
+            <h3>Fluid Simulation</h3>
+            <p>
+              A real-time fluid simulation built in Unity. [Add 1&ndash;2 sentences: the technique,
+              such as particle-based or grid-based, and what makes it interesting to watch.]
+            </p>
+            <p class="links">
+              <a href="https://github.com/YOUR-USERNAME/fluid-simulation">Source</a>
+            </p>
+          </div>
+        </article>
 
-      <!-- ===================== PROJECT 2 ===================== -->
-      <article class="project">
-        <div class="media">
-          <div class="placeholder">Add video, GIF, or concept art</div>
-        </div>
-        <div class="body">
-          <p class="tag">Game concept &middot; Design</p>
-          <h3>Ink Blade</h3>
-          <p>
-            A game concept. [Add 2&ndash;3 sentences: the core mechanic, the fantasy of playing it,
-            and the visual style.]
-          </p>
-          <ul>
-            <li>[Core mechanic or loop]</li>
-            <li>[What you prototyped or designed]</li>
-          </ul>
-          <p class="links">
-            <a href="https://github.com/YOUR-USERNAME/ink-blade">Prototype on GitHub</a>
-          </p>
-        </div>
-      </article>
+        <!-- ===================== PROJECT ===================== -->
+        <article class="card">
+          <div class="media">
+            <div class="placeholder">Add before / after video</div>
+          </div>
+          <div class="body">
+            <p class="tag">Unity URP &middot; Shaders</p>
+            <h3>Ink Arm Shader</h3>
+            <p>
+              A metaballs shader that renders a skeletal arm, from the arm bones to the fingertips,
+              as inky liquid while keeping the bones recognizable. Each bone is its own object,
+              chained down to the fingertips.
+            </p>
+            <p class="note">In progress: drips and sag, impact ripples, per-ray segment culling.</p>
+            <p class="links">
+              <a href="https://github.com/YOUR-USERNAME/ink-arm-shader">Source</a>
+            </p>
+          </div>
+        </article>
 
-      <!-- ===================== PROJECT 3 ===================== -->
-      <article class="project">
-        <div class="media">
-          <div class="placeholder">Add before / after video</div>
-        </div>
-        <div class="body">
-          <p class="tag">Unity URP &middot; Shaders</p>
-          <h3>Ink Arm Shader</h3>
-          <p>
-            A custom metaballs shader in Unity&rsquo;s Universal Render Pipeline that renders a skeletal arm,
-            from the arm bones to the fingertips, as an inky liquid while keeping the bones recognizable.
-          </p>
-          <ul>
-            <li>Each bone is a separate object, chained from the arm to the fingertips</li>
-            <li>Extensions in progress: per-ray segment culling, drips and sag, impact ripples, and a DepthNormals pass</li>
-          </ul>
-          <p class="links">
-            <a href="https://github.com/YOUR-USERNAME/ink-arm-shader">Source on GitHub</a>
-          </p>
-        </div>
-      </article>
+        <!-- ===================== PROJECT ===================== -->
+        <article class="card">
+          <div class="media">
+            <div class="placeholder">Add video, GIF, or concept art</div>
+          </div>
+          <div class="body">
+            <p class="tag">Game concept</p>
+            <h3>Ink Blade</h3>
+            <p>
+              A game concept. [Add 2&ndash;3 sentences: the core mechanic, the fantasy of playing it,
+              and the visual style.]
+            </p>
+            <p class="links">
+              <a href="https://github.com/YOUR-USERNAME/ink-blade">Prototype</a>
+            </p>
+          </div>
+        </article>
 
-      <!-- ===================== PROJECT 4 ===================== -->
-      <article class="project">
-        <div class="media">
-          <div class="placeholder">Add gameplay clip or screenshots</div>
-        </div>
-        <div class="body">
-          <p class="tag">Indie game &middot; C# &middot; Perforce</p>
-          <h3>Sisyphus&rsquo;s Worst Day (again)</h3>
-          <p>
-            I worked as a software engineer on this indie game from September 2025 to May 2026,
-            building gameplay and technical systems in C#.
-          </p>
-          <ul>
-            <li>3D grid-based object placement and interaction system</li>
-            <li>A* pathfinding for navigation</li>
-            <li>Predictive loop detection</li>
-          </ul>
-          <p class="links">
-            <a href="#">Game page</a>
-          </p>
-        </div>
-      </article>
+        <!-- ===================== PROJECT ===================== -->
+        <article class="card">
+          <div class="media">
+            <div class="placeholder">Add gameplay clip or screenshots</div>
+          </div>
+          <div class="body">
+            <p class="tag">Indie game &middot; C#</p>
+            <h3>Sisyphus&rsquo;s Worst Day (again)</h3>
+            <p>
+              An indie game I helped build. I worked on the 3D grid-based object placement and
+              interaction, A* pathfinding, and predictive loop detection.
+            </p>
+            <p class="links">
+              <a href="#">Game page</a>
+            </p>
+          </div>
+        </article>
 
-      <!-- ===================== PROJECT 5 ===================== -->
-      <article class="project">
-        <div class="media">
-          <div class="placeholder">Add gameplay clip or screenshots</div>
-        </div>
-        <div class="body">
-          <p class="tag">Game &middot; Vehicle physics</p>
-          <h3>Collision Course: Jupiter Drift</h3>
-          <p>
-            A vehicle game from Collision Course Studios. I built the shop system and UI and worked on
-            realistic vehicle movement.
-          </p>
-          <p class="links">
-            <a href="#">Game page</a>
-          </p>
-        </div>
-      </article>
+        <!-- ===================== PROJECT ===================== -->
+        <article class="card">
+          <div class="media">
+            <div class="placeholder">Add gameplay clip or screenshots</div>
+          </div>
+          <div class="body">
+            <p class="tag">Game &middot; Vehicle physics</p>
+            <h3>Collision Course: Jupiter Drift</h3>
+            <p>
+              A vehicle game. I built the shop system and UI and worked on making the vehicles
+              move realistically.
+            </p>
+            <p class="links">
+              <a href="#">Game page</a>
+            </p>
+          </div>
+        </article>
 
-      <!-- ===================== PROJECT 6 ===================== -->
-      <article class="project">
-        <div class="media">
-          <div class="placeholder">Add video or screenshots</div>
-        </div>
-        <div class="body">
-          <p class="tag">Unity &middot; C# &middot; Simulation</p>
-          <h3>Autonomous Vehicle Collision &amp; Physics Simulation</h3>
-          <p>
-            A custom collision and physics simulation system I built as lead game developer at Oregon State
-            University, used to test autonomous vehicle behavior.
-          </p>
-        </div>
-      </article>
-    </section>
+        <!-- ===================== PROJECT ===================== -->
+        <article class="card">
+          <div class="media">
+            <div class="placeholder">Add video or screenshots</div>
+          </div>
+          <div class="body">
+            <p class="tag">Unity &middot; C# &middot; Physics</p>
+            <h3>Autonomous Vehicle Collision Sim</h3>
+            <p>
+              A custom collision and physics simulation in Unity for testing how autonomous
+              vehicles behave.
+            </p>
+          </div>
+        </article>
 
-    <section id="about">
-      <h2>About</h2>
-      <div class="about-grid">
-        <div>
-          <p>
-            I hold a B.S. in Computer Science from Oregon State University, with a focus in Game Design and
-            Simulation, and completed graduate coursework at the University of Southern California in
-            Foundations of Artificial Intelligence, Machine Learning, Analysis of Algorithms, and Graphics
-            and Rendering.
-          </p>
-          <p>
-            I&rsquo;ve built gameplay systems, pathfinding, and reinforcement-learning-based decision-making,
-            and I enjoy working with artists, designers, and technical artists to turn ideas into polished,
-            playable experiences.
-          </p>
-        </div>
-        <div>
-          <h3 class="small">Skills</h3>
-          <ul class="chips">
-            <li>C#</li><li>C++</li><li>Python</li><li>Java</li>
-            <li>Unity</li><li>Unreal Engine</li><li>Shaders (URP)</li>
-            <li>Reinforcement learning</li><li>Pathfinding</li><li>Physics simulation</li>
-            <li>PyTorch / CUDA</li><li>Git</li><li>Perforce</li><li>Agile</li>
-          </ul>
-          <p class="muted">Languages spoken: English, Mandarin</p>
-        </div>
       </div>
     </section>
 
     <section id="contact">
-      <h2>Contact</h2>
-      <p>I&rsquo;m open to gameplay, engine, and AI programming roles.</p>
+      <h2>Say hi</h2>
       <p class="contact-links">
-        <a class="btn primary" href="mailto:Max.yj.fu@gmail.com">Max.yj.fu@gmail.com</a>
-        <a class="btn" href="https://github.com/YOUR-USERNAME">GitHub</a>
-        <a class="btn" href="https://www.linkedin.com/in/YOUR-PROFILE">LinkedIn</a>
+        <a href="mailto:Max.yj.fu@gmail.com">Email</a>
+        <a href="https://github.com/YOUR-USERNAME">GitHub</a>
+        <a href="https://www.linkedin.com/in/YOUR-PROFILE">LinkedIn</a>
       </p>
     </section>
 
